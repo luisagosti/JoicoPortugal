@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- AlpineCSS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Joico Portugal - Profissionais em cosmética</title>
+</head>
+
+<html style="scroll-behavior: smooth;">
+
+<body class="!scroll-smooth snap-start">
+    <!-- Header -->
+    <div class="w-full text-gray-700 bg-black fixed top-0 z-50">
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-4">
+            <div class="p-5 flex flex-row items-center justify-between">
+                <a href="https://joicoportugal.pt/"><img src="images/image.jpg" alt="" class="h-5 max-w-full"></a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="white" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                <a class="px-4 text-white py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#defyDamage">Novidades</a>
+                <a class="px-4 text-white py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#formacao">Formação</a>
+                <a class="px-4 text-white py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="about.html">Quem Somos</a>
+                <a class="px-4 text-white py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#footer">Contactos</a>
+
+                <!-- Cuidados Capilares -->
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @mouseenter="open = true" @mouseleave="open = false" @touchstart.prevent
+                        @touchend.prevent="open = !open"
+                        class="flex text-white font-semibold flex-row items-center w-full px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>Cuidados Capilares</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                        <div class="px-2 py-2 bg-black rounded-md shadow dark-mode:bg-gray-800">
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Defy Damage
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">K-Pak
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">K-Pak Color Therapy
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Youthlock
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Blonde Life
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Moisture Recovery
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">HydraSplash
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">JoiFull
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">ColorFul
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Styling/Finalização -->
+                <div @mouseleave="open = false" class="relative" x-data="{ open: false }">
+                    <button @mouseenter="open = true" @touchstart.prevent @touchend.prevent="open = !open"
+                        class="flex text-white font-semibold flex-row items-center w-full px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>Styling/Finalização</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" @mouseenter="open = true" @mouseleave="open = false"
+                        x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                        <div class="px-2 py-2 bg-black rounded-md shadow dark-mode:bg-gray-800">
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Hair Sprays
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Avolumadores
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Protectores Térmicos
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Geles & Cremes finalizantes
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Texturizantes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Coloração/Aclaração -->
+                <div @mouseleave="open = false" class="relative" x-data="{ open: false }">
+                    <button @mouseenter="open = true" @touchstart.prevent @touchend.prevent="open = !open"
+                        class="flex text-white font-semibold flex-row items-center w-full px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>Coloração/Aclaração</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" @mouseenter="open = true" @mouseleave="open = false"
+                        x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                        <div class="px-2 py-2 bg-black rounded-md shadow dark-mode:bg-gray-800">
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Lumishine
+                            </a>
+                            <a class="block text-white px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="#">Blonde Life
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Landing Page -->
+    <video class="w-full object-cover mt-14 brightness-95" style="height: 44rem" autoplay loop muted
+        onloadstart="this.playbackRate = 0.8;">
+        <source src="images/Media1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Divisor -->
+    <section class="py-10 bg-black sm:py-16 lg:py-24 snap-start">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="grid items-stretch gap-y-10 md:grid-cols-2 md:gap-x-20">
+                <div class="relative grid grid-cols-2 gap-6 mt-10 md:mt-0">
+                    <div class="overflow-hidden aspect-w-3 aspect-h-4">
+                        <img class="object-cover object-top origin-top scale-150" src="images/allImages/img142.jpg"
+                            alt="" />
+                    </div>
+
+                    <div class="relative">
+                        <div class="h-full overflow-hidden aspect-w-3 aspect-h-4">
+                            <img class="object-cover scale-150 lg:origin-bottom-right" src="images/allImages/img664.jpg"
+                                alt="" />
+                        </div>
+                    </div>
+
+                    <div class="absolute -translate-x-1/2 left-1/2 -top-16">
+                        <img class="w-32 h-32 invert"
+                            src="https://cdn.rareblocks.xyz/collection/celebration/images/features/2/round-text.png"
+                            alt="" />
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-start xl:px-16">
+                    <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">The <b>Joi</b> of
+                        healthy
+                        hair</h2>
+                    <p class="mt-4 text-lg leading-relaxed text-gray-100">Joico é uma marca <b>profissional e
+                            exclusiva</b>,
+                        criada
+                        por um Estilista para todos os Estilistas criativos, focados:
+                        na <b>beleza, qualidade, tecnologia</b> e cuja prioridade seja, <b>“A saúde do cabelo das suas
+                            clientes"</b>
+                    </p>
+
+                    <a href="about.html" title=""
+                        class="inline-flex items-center justify-center px-5 py-4 mt-8 text-base font-semibold text-black transition-all duration-200 rounded-md hover:opacity-90 focus:opacity-90 lg:mt-auto bg-white"
+                        role="button">
+                        Conheça-nos
+                        <svg class="w-5 h-5 ml-8 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="black">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Joi Award Winner -->
+    <div class="container mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white">
+            <div class="max-w-2xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8" id="defyDamage">
+                <div class="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
+                    <div>
+                        <div class="border-b border-gray-200 pb-10">
+                            <h2 class="font-medium text-gray-500">Joi Award Winner</h2>
+                            <p class="mt-2 text-2xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">Defy Damage
+                            </p>
+                        </div>
+
+                        <dl class="mt-6 space-y-10">
+                            <div>
+                                <dt class="text-base text-gray-900">Oferece proteção a todos os tipos de
+                                    cabelos
+                                    expostos diariamente ao uso de aparelhos térmicos, exposição aos raios UV e da
+                                    poluição ambiental que levam a uma desidratação dos cabelos, deixando-os opacos e
+                                    sem brilho. Com o nosso sistema de cuidado capilar Defy Damage , desafia os danos
+                                    antes que aconteçam, ajudando a proteger e fortalecer as ligações capilares para uma
+                                    transformação saudável do cabelo, que pode ver e sentir instantaneamente.</dt>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div>
+                        <div class="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+                            <img src="images/Picture1.png" class="w-full h-auto object-center object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product display -->
+    <div class="bg-white -mt-32">
+        <div class="max-w-2xl mx-auto py-16 px-4 sm:py-2 sm:px-6 lg:max-w-7xl lg:px-8">
+            <h2 class="sr-only">Products</h2>
+
+            <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8">
+                <a href="#" class="group">
+                    <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="images/DEFY DAMAGE PROTECTIVE SHAMPOO.jpg"
+                            alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+                            class="w-full h-full object-cover group-hover:opacity-75">
+                    </div>
+                    <p class="mt-4 text-md font-medium text-gray-900">Defy Damage</p>
+                    <h3 class="text-sm text-gray-700">Protective Shampoo</h3>
+                </a>
+
+                <a href="#" class="group">
+                    <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="images/DEFY DAMAGE PROTECTIVE CONDITIONER.jpg"
+                            alt="Olive drab green insulated bottle with flared screw lid and flat top."
+                            class="w-full h-full object-cover group-hover:opacity-75">
+                    </div>
+                    <p class="mt-4 text-md font-medium text-gray-900">Defy Damage</p>
+                    <h3 class="text-sm text-gray-700">Protective Conditioner</h3>
+                </a>
+
+                <a href="#" class="group">
+                    <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="images/DEFY DAMAGE PROTECTIVE MASQUE.jpg"
+                            alt="Person using a pen to cross a task off a productivity paper card."
+                            class="w-full h-full object-cover group-hover:opacity-75">
+                    </div>
+                    <p class="mt-4 text-md font-medium text-gray-900">Defy Damage</p>
+                    <h3 class="text-sm text-gray-700">Protective Masque</h3>
+                </a>
+
+                <a href="#" class="group">
+                    <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="images/DEFY DAMAGE PROTECTIVE SHIELD.jpg"
+                            alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+                            class="w-full h-full object-cover group-hover:opacity-75">
+                    </div>
+                    <p class="mt-4 text-md font-medium text-gray-900">Defy Damage</p>
+                    <h3 class="text-sm text-gray-700">Protective Shield</h3>
+                </a>
+
+                <a href="#" class="group">
+                    <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="images/DEFY DAMAGE SLEEPOVER.jpg"
+                            alt="Olive drab green insulated bottle with flared screw lid and flat top."
+                            class="w-full h-full object-cover group-hover:opacity-75">
+                    </div>
+                    <p class="mt-4 text-md font-medium text-gray-900">Defy Damage</p>
+                    <h3 class="text-sm text-gray-700">Sleepover</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formação -->
+    <div id="formacao">
+        <!-- Header -->
+        <div class="py-24 bg-[#f6f6f6] sm:py-32 mt-16">
+            <div class="max-w-md mx-auto pl-4 pr-8 sm:max-w-lg sm:px-6 lg:max-w-7xl lg:px-8">
+                <h1
+                    class="text-4xl leading-10 font-extrabold tracking-tight text-gray-900 text-center sm:text-5xl sm:leading-none lg:text-6xl">
+                    Formação</h1>
+                <p class="mt-6 max-w-3xl mx-auto text-xl leading-normal text-gray-500 text-center">Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud</p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="relative bg-white">
+            <div class="lg:absolute lg:inset-0">
+                <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                    <img class="h-56 w-full object-cover lg:absolute lg:h-full" src="images/allImages/img6.jpg" alt="">
+                </div>
+            </div>
+            <div
+                class="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
+                <div class="lg:pr-8">
+                    <div class="max-w-md mx-auto sm:max-w-lg lg:mx-0">
+                        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Candidate-se á formação</h2>
+                        <p class="mt-4 text-lg text-gray-500 sm:mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                        <form action="#" method="POST" class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700">Primeiro
+                                    nome</label>
+                                <div class="mt-1">
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                        class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700">Ultimo
+                                    nome</label>
+                                <div class="mt-1">
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                        class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <div class="mt-1">
+                                    <input id="email" name="email" type="email" autocomplete="email"
+                                        class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="company" class="block text-sm font-medium text-gray-700">Companhia</label>
+                                <div class="mt-1">
+                                    <input type="text" name="company" id="company" autocomplete="organization"
+                                        class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <div class="flex justify-between">
+                                    <label for="phone" class="block text-sm font-medium text-gray-700">Telefone</label>
+                                    <span id="phone-description" class="text-sm text-gray-500">Opcional</span>
+                                </div>
+                                <div class="mt-1">
+                                    <input type="text" name="phone" id="phone" autocomplete="tel"
+                                        aria-describedby="phone-description"
+                                        class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border-gray-300 rounded-md">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <div class="flex justify-between">
+                                    <label for="how-can-we-help"
+                                        class="block text-sm font-medium text-gray-700">Fale-nos sobre você</label>
+                                    <span id="how-can-we-help-description" class="text-sm text-gray-500">Max. 500
+                                        caracteres</span>
+                                </div>
+                                <div class="mt-1">
+                                    <textarea id="how-can-we-help" name="how-can-we-help"
+                                        aria-describedby="how-can-we-help-description" rows="4"
+                                        class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border border-gray-300 rounded-md"></textarea>
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="how-did-you-hear-about-us"
+                                    class="block text-sm font-medium text-gray-700">Como ouviu sobre nós?</label>
+                                <div class="mt-1">
+                                    <textarea name="how-did-you-hear-about-us" id="how-did-you-hear-about-us"
+                                        aria-describedby="how-can-we-help-description" rows="4"
+                                        class="block w-full shadow-sm sm:text-sm focus:ring-grape-500 focus:border-grape-500 border border-gray-300 rounded-md"></textarea>
+                                </div>
+                            </div>
+                            <div class="text-right sm:col-span-2">
+                                <button type="submit"
+                                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-grape-600 hover:bg-grape-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-grape-500">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="flex items-end w-full bg-white" id="footer">
+        <footer class="w-full text-gray-700 bg-black body-font">
+            <div
+                class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+                <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+                    <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+                        <img src="images/image.jpg" alt="">
+                    </a>
+                    <p class="mt-2 text-sm text-white">The <b>joi</b> of healthy hair</p>
+                    <div class="mt-4">
+                        <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+
+                            <!-- Facebook -->
+                            <a class="text-white cursor-pointer hover:text-gray-700"
+                                href="https://www.facebook.com/Joico.Portugal">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                </svg>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a class="ml-3 text-white cursor-pointer hover:text-gray-700"
+                                href="https://www.instagram.com/joicoportugal/">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Sobre nós
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-white cursor-pointer hover:text-white">Quem somos</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white cursor-pointer hover:text-white">A nossa missão</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white cursor-pointer hover:text-white">Formação</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Suporte
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-white cursor-pointer hover:text-white">Cuidados Capilares</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white cursor-pointer hover:text-white">Styling/Finalização</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white cursor-pointer hover:text-white">Coloração/Aclaração</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                        <h2 class="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">Contactos
+                        </h2>
+                        <nav class="mb-10 list-none">
+                            <li class="mt-3">
+                                <a class="text-white hover:text-white">Rua Horta dos Bacelos <br>
+                                    Edifício Empresarial Tejo, 1º Esq. <br>
+                                    2690-390 Santa Iria da Azóia</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white hover:text-white">+351 219 412 743</a>
+                            </li>
+                            <li class="mt-3">
+                                <a class="text-white hover:text-white">geral@pmccosmetics.pt</a>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black">
+                <div class="container px-5 py-4 mx-auto">
+                    <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 All rights reserved Joico Portugal
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+</html>

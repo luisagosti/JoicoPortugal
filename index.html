@@ -50,9 +50,8 @@
                     href="#footer">Contactos</a>
 
                 <!-- Cuidados Capilares -->
-                <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                    <button @mouseenter="open = true" @mouseleave="open = false" @touchstart.prevent
-                        @touchend.prevent="open = !open"
+                <div @mouseleave="open = false" class="relative" x-data="{ open: false }">
+                    <button @mouseenter="open = true" @touchstart.prevent @touchend.prevent="open = !open"
                         class="flex text-white font-semibold flex-row items-center w-full px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                         <span>Cuidados Capilares</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -62,8 +61,8 @@
                                 clip-rule="evenodd"></path>
                         </svg>
                     </button>
-
-                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                    <div x-show="open" @mouseenter="open = true" @mouseleave="open = false"
+                        x-transition:enter="transition ease-out duration-100"
                         x-transition:enter-start="transform opacity-0 scale-95"
                         x-transition:enter-end="transform opacity-100 scale-100"
                         x-transition:leave="transition ease-in duration-75"
@@ -178,10 +177,20 @@
     </div>
 
     <!-- Landing Page (style="height: 44rem")-->
-    <video class="w-full object-cover mt-14 brightness-95" autoplay loop muted onloadstart="this.playbackRate = 0.8;">
-        <source src="images/Media1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="relative w-full h-screen overflow-hidden" style="height: 100%">
+        <!-- Blurred video -->
+        <video class="absolute inset-0 w-full h-full object-cover z-0 brightness-95 blurred-video" autoplay muted loop
+            style="filter: blur(20px); transform: scale(1.1)" onloadstart="this.playbackRate = 0.8;">
+            <source src="images/Media1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Non-blurred video on top -->
+        <video class="xl:w-3/4 object-cover mt-14 brightness-100 mx-auto md:w-full object-cover" autoplay loop muted
+            onloadstart="this.playbackRate = 0.8;">
+            <source src="images/Media1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
     <!-- Divisor -->
     <section class="py-10 bg-black sm:py-16 lg:py-24 snap-start">
@@ -329,8 +338,6 @@
         </div>
     </div>
 
-    <!-- Formação -->
-
     <!-- Footer -->
     <div class="flex items-end w-full bg-white" id="footer">
         <footer class="w-full text-gray-700 bg-black body-font">
@@ -417,8 +424,8 @@
             </div>
             <div class="bg-black">
                 <div class="container px-5 py-4 mx-auto">
-                    <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 All rights reserved Joico Portugal
-                    </p>
+                    <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 All rights reserved Pedro Coimbra
+                        Unipessoal Lda. - Representante e distribuidor exclusivo da marca Joico em Portugal
                 </div>
             </div>
         </footer>

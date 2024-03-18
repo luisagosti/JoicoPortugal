@@ -50,9 +50,8 @@
                     href="#footer">Contactos</a>
 
                 <!-- Cuidados Capilares -->
-                <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                    <button @mouseenter="open = true" @mouseleave="open = false" @touchstart.prevent
-                        @touchend.prevent="open = !open"
+                <div @mouseleave="open = false" class="relative" x-data="{ open: false }">
+                    <button @mouseenter="open = true" @touchstart.prevent @touchend.prevent="open = !open"
                         class="flex text-white font-semibold flex-row items-center w-full px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                         <span>Cuidados Capilares</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -62,8 +61,8 @@
                                 clip-rule="evenodd"></path>
                         </svg>
                     </button>
-
-                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                    <div x-show="open" @mouseenter="open = true" @mouseleave="open = false"
+                        x-transition:enter="transition ease-out duration-100"
                         x-transition:enter-start="transform opacity-0 scale-95"
                         x-transition:enter-end="transform opacity-100 scale-100"
                         x-transition:leave="transition ease-in duration-75"
@@ -177,7 +176,6 @@
         </div>
     </div>
 
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="relative bg-gray-800">
         <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
             <img class="w-full h-full object-cover"
@@ -306,8 +304,8 @@
             </div>
             <div class="bg-black">
                 <div class="container px-5 py-4 mx-auto">
-                    <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 All rights reserved Joico Portugal
-                    </p>
+                    <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 All rights reserved Pedro Coimbra
+                        Unipessoal Lda. - Representante e distribuidor exclusivo da marca Joico em Portugal
                 </div>
             </div>
         </footer>

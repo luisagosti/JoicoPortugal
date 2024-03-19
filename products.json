@@ -1,0 +1,77 @@
+{
+  "categories": [
+    {
+      "name": "DEFY DAMAGE",
+      "products": [
+        {
+          "id": 1,
+          "name": "Protective Shield",
+          "description": "Spray protetor de pontes e optimizador de cor. Protege o cabelo instantaneamente dos danos causados por produtos químicos. Melhora o pH, para melhor depósito, uniformização e elevação da cor. Para usar antes dos serviços químicos",
+          "size": "100 ml",
+          "image": "images/defyDmg/protective_shield_100ml.webp"
+        },
+        {
+          "id": 2,
+          "name": "Sleepover",
+          "description": "Tratamento para usar durante a noite \n\nSerum/Elixir, fornece nutrição profunda enquanto dorme, e protege o cabelo dos danos diários e da poluição.",
+          "size": "120 ml",
+          "image": "images/defyDmg/sleepove.webp"
+        },
+        {
+          "id": 3,
+          "name": "ProSeries 1",
+          "description": "Spray protetor de pontes e optimizador de cor. Protege o cabelo instantaneamente dos danos causados por produtos químicos. Melhora o pH, para melhor depósito, uniformização e elevação da cor. Para usar antes dos serviços químicos.",
+          "size": "358 ml",
+          "image": "images/defyDmg/pro1.webp"
+        },
+        {
+          "id": 4,
+          "name": "ProSeries 2",
+          "description": "Tratamento fortalecedor de pontes e preservador da cor. Para usar após os serviços químicos.",
+          "size": "500 ml",
+          "image": "images/defyDmg/pro2.webp"
+        },
+        {
+          "id": 5,
+          "name": "Protective Shampoo",
+          "description": "Champô rico, livre de sulfatos, que previne os danos e protege o cabelo. Limpa suavemente todas as impurezas. Aumenta a defesa natural do cabelo contra todos os tipos de danos diários",
+          "size": "300 ml – 1000 ml",
+          "image": "images/defyDmg/protective_shampoo_300ml.webp"
+        },
+        {
+          "id": 6,
+          "name": "Protective Conditioner",
+          "description": "Condicionador diário Reabastece hidratação perdida. Restaura a suavidade e aumenta a resiliência do cabelo contra a quebra.",
+          "size": "250 ml – 1000 ml",
+          "image": "images/defyDmg/protective_conditioner_250ml.webp"
+        },
+        {
+          "id": 7,
+          "name": "Protective Masque",
+          "description": "Tratamento em creme luxuoso, ajuda a fortalecer o cabelo, protege contra as pontas duplas, quebra e danos provocados pelos raios UV e térmicos.",
+          "size": "150 ml",
+          "image": "images/defyDmg/pro_2_masque_150ml.webp"
+        }
+      ]
+    },
+    {
+      "name": "Blonde Life",
+      "products": [
+        {
+          "id": 8,
+          "name": "Product 6",
+          "description": "Description of Product 6 under Blonde Life",
+          "size": "Large",
+          "image": "https://example.com/product6.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Product 7",
+          "description": "Description of Product 7 under Blonde Life",
+          "size": "Small",
+          "image": "https://example.com/product7.jpg"
+        }
+      ]
+    }
+  ]
+}

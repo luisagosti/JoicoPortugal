@@ -1,77 +1,497 @@
 {
-  "categories": [
-    {
-      "name": "DEFY DAMAGE",
-      "products": [
-        {
-          "id": 1,
-          "name": "Protective Shield",
-          "description": "Spray protetor de pontes e optimizador de cor. Protege o cabelo instantaneamente dos danos causados por produtos químicos. Melhora o pH, para melhor depósito, uniformização e elevação da cor. Para usar antes dos serviços químicos",
-          "size": "100 ml",
-          "image": "images/defyDmg/protective_shield_100ml.webp"
-        },
-        {
-          "id": 2,
-          "name": "Sleepover",
-          "description": "Tratamento para usar durante a noite \n\nSerum/Elixir, fornece nutrição profunda enquanto dorme, e protege o cabelo dos danos diários e da poluição.",
-          "size": "120 ml",
-          "image": "images/defyDmg/sleepove.webp"
-        },
-        {
-          "id": 3,
-          "name": "ProSeries 1",
-          "description": "Spray protetor de pontes e optimizador de cor. Protege o cabelo instantaneamente dos danos causados por produtos químicos. Melhora o pH, para melhor depósito, uniformização e elevação da cor. Para usar antes dos serviços químicos.",
-          "size": "358 ml",
-          "image": "images/defyDmg/pro1.webp"
-        },
-        {
-          "id": 4,
-          "name": "ProSeries 2",
-          "description": "Tratamento fortalecedor de pontes e preservador da cor. Para usar após os serviços químicos.",
-          "size": "500 ml",
-          "image": "images/defyDmg/pro2.webp"
-        },
-        {
-          "id": 5,
-          "name": "Protective Shampoo",
-          "description": "Champô rico, livre de sulfatos, que previne os danos e protege o cabelo. Limpa suavemente todas as impurezas. Aumenta a defesa natural do cabelo contra todos os tipos de danos diários",
-          "size": "300 ml – 1000 ml",
-          "image": "images/defyDmg/protective_shampoo_300ml.webp"
-        },
-        {
-          "id": 6,
-          "name": "Protective Conditioner",
-          "description": "Condicionador diário Reabastece hidratação perdida. Restaura a suavidade e aumenta a resiliência do cabelo contra a quebra.",
-          "size": "250 ml – 1000 ml",
-          "image": "images/defyDmg/protective_conditioner_250ml.webp"
-        },
-        {
-          "id": 7,
-          "name": "Protective Masque",
-          "description": "Tratamento em creme luxuoso, ajuda a fortalecer o cabelo, protege contra as pontas duplas, quebra e danos provocados pelos raios UV e térmicos.",
-          "size": "150 ml",
-          "image": "images/defyDmg/pro_2_masque_150ml.webp"
-        }
-      ]
-    },
-    {
-      "name": "Blonde Life",
-      "products": [
-        {
-          "id": 8,
-          "name": "Product 6",
-          "description": "Description of Product 6 under Blonde Life",
-          "size": "Large",
-          "image": "https://example.com/product6.jpg"
-        },
-        {
-          "id": 9,
-          "name": "Product 7",
-          "description": "Description of Product 7 under Blonde Life",
-          "size": "Small",
-          "image": "https://example.com/product7.jpg"
-        }
-      ]
-    }
-  ]
+	"categories": [
+		{
+			"name": "DEFY DAMAGE",
+			"products": [
+				{
+					"name": "DEFY DAMAGE Protective Shampoo",
+					"subname": "Para fortalecer as ligações & longevidade da cor",
+					"description": "Champô com uma espuma rica e luxuosa, carregada com ingredientes que previnem danos, remove suavemente e rapidamente as impurezas acumuladas, sem danificar a cutícula do cabelo ou remover a cor vibrante. LIVRE DE SLS/SLES (LAURIL DE SÓDIO/LAURETO DE SÓDIO) SULFATOS. Resultado: cabelos brilhantes, macios e limpos, maravilhosamente resistentes e com aparência saudável.",
+					"instructions": "Aplicar nos cabelos molhados. Emulsionar. Passar bem por água.",
+					"size": "300 ml e 1000 ml",
+					"image": ""
+				},
+				{
+					"name": "DEFY DAMAGE Protective Conditioner",
+					"subname": "Para fortalecer as ligações & Longevidade da cor",
+					"description": "Condicionador para repor a hidratação e criar resiliência sem deixar o cabelo pesado, proporcionando-lhe suavidade, brilho e com aparência saudável a cada utilização. Ajuda a prevenir e proteger dos danos diários; Aumenta a humidade vital. Desembaraça instantaneamente; Deixa o cabelo macio, brilhante e com aparência saudável.",
+					"instructions": "Aplique nos cabelos lavados e húmidos. Deixar de pose 1-2 minutos. Passar bem por água.",
+					"size": "250 ml e 1000 ml",
+					"image": ""
+				},
+				{
+					"name": "DEFY DAMAGE Protective Masque",
+					"subname": "Para fortalecer as ligações & Longevidade da cor",
+					"description": "Tratamento poderoso para usar em casa, penetra profundamente para infundir no cabelo um sistema de defesa brilhante e fortalecedor. Resultado? Menos a quebra, mais proteção contra os danos térmicos. O cabelo fica instantaneamente mais suave e brilhante. Ajuda a reconstruir as ligações capilares quebradas; Repõe profundamente os cabelos sem os deixar pesados; Veja os resultados logo após a primeiro aplicação. Constrói proactivamente a resistência do cabelo aos danos; deixa os cabelos macios, brilhantes e com aspeto saudável.",
+					"instructions": "Aplicar nos cabelos húmidos; deixe de pose por até 5 minutos (dependendo do tipo de cabelo). Passar bem por água.",
+					"size": "150ml",
+					"image": ""
+				},
+				{
+					"name": "DEFY DAMAGE IN A FLASH",
+					"subname": "Construtor de ligações em 7 segundos",
+					"description": "Uma viagem rápida para cabelos fortificados! Com o poder inovador de Defy Damage, IN A FLASH ajuda a construir ligações – proporcionando uma transformação deslumbrante em 7 segundos que poderá ver e sentir. Com uma fórmula única líquida que se transforma em creme, este protetor capilar de atuação rápida ajuda a construir ligações, tornando o cabelo mais forte* e menos propenso a quebrar*.",
+					"instructions": "Lavar o cabelo com o Protective Shampoo Defy Damage. Aplicar Defy Damage In A Flash no cabelo húmido e secos com uma toalha, do meio/comprimento para as pontas, evitando a raiz. Emulsionar o cabelo até que o líquido fique cremoso. Deixar de pose 7 segundos. Passar por água. Pentear como habitualmente.",
+					"size": "200ml",
+					"image": ""
+				},
+				{
+					"name": "DEFY DAMAGE KBOND20",
+					"subname": "Máscara fortificante",
+					"description": "Máscara poderosa, o nosso novo tratamento de construção de ligações que combina o legado da inovadora tecnologia de reparação capilar JOICO e o poder de controle de danos num único e extraordinário produto para cabelos 5X mais fortes*. Esta máscara de fortalecimento oferece resultados transformadores num único tratamento. Cabelo 5X mais forte* numa só utilização. Constrói e protege vínculos Hidratação rica. Desembaraça instantaneamente. Normaliza o pH. Seguro usar com a cor Aprovado pela PETA, globalmente livre de testes em animais.",
+					"instructions": "Lavar o cabelo com o Protective Shampoo Defy Damage. Aplicar a máscara KBOND20 nos cabelos húmidos. Deixar de pose 2-5 minutos. Passar por água. Pentear como habitualmente.",
+					"size": "150ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "DEFY DAMAGE",
+			"products": [
+				{
+					"name": "DEFY DAMAGE PRO SERIES 1 Bond-Protecting Color Optimizer Spray",
+					"step": "PASSO 1 - PROTEÇÃO DE LIGAÇÕES",
+					"pH": "9.0 - 10.0",
+					"MWS": "150-2500",
+					"description": "Um protetor de ligação em spray ultra-seco que ajuda instantaneamente a proteger o cabelo contra danos químicos, otimiza o pH para uma penetração melhor e mais uniforme da cor, melhora o depósito de cor e proporciona uma maior elevação e mais uniformidade durante o processo de aclaração. Alta concentração de Tecnologia SmartRelease e Arginina.",
+					"instructions": "Instruções de uso: Aplicar nos cabelos secos antes do serviço químico, começando pela nuca, dividir o cabelo em madeixas horizontais, colocar a embalagem verticalmente e efetuar pulverizações curtas a 8-15 cm de distância do cabelo. Seguir este procedimento até terminar todas as madeixas. Se existirem madeixas mais danificadas do que outras, poderá reaplicar o ProSeries 1 nessas zonas para proteção adicional. Pentear o cabelo para garantir uma distribuição completa e uniforme.",
+					"size": "358ml",
+					"image": ""
+				},
+				{
+					"name": "DEFY DAMAGE PRO SERIES 2 Bond-Strengthening Color Treatment",
+					"step": "PASSO 2 - FORTALECIMENTO DE LIGAÇÕES",
+					"pH": "3.5 - 4.5",
+					"MWS": "150-2500",
+					"description": "Um tratamento intensivo para ajudar a fortalecer as ligações e hidratar – proporcionando uma aparência saudável aos cabelos apenas com 1 aplicação. Somente para uso profissional. Regenera as ligações e fortalece o cabelo. Protege os cabelos dos danos mecânicos, térmicos e ambientais; Contém alta concentração da Tecnologia SmartRelease e Arginina.",
+					"instructions": "Instruções de uso: Aplicar ProSeries 2 no cabelo lavado e húmido. Deixar de pose 5 minutos. Passar bem por água.",
+					"size": "500 ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "K-PAK",
+			"products": [
+				{
+					"name": "K-PAK Reconstructing Shampoo",
+					"subname": "Para reparar cabelos danificados",
+					"description": "Champô de fórmula rica e potenciada, à base de queratina e Extrato de Goiaba, ajuda a fortalecer os cabelos fragilizados e enfraquecidos. Ao contrário dos champôs tradicionais lava sem retirar os elementos essenciais, fornecendo e repondo os mesmos para melhorar instantaneamente a elasticidade, força e brilho. Ajuda a restaurar o cabelo à sua condição original, dando-lhe uma aparência saudável e ainda uma capa de proteção para evitar danos futuros. Resultado: Cabelos mais Lustrosos e resilientes.",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Passar por água. Repetir a aplicação se necessário. Complemente com o condicionador K-Pak.",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK Clarifying Shampoo",
+					"subname": "Para remover cloro e resíduos acumulados",
+					"description": "Este champô profundamente desintoxicante abre caminho para cabelos brilhantes, flexíveis e de aparência saudável, removendo suavemente, mas com eficácia, os resíduos acumulados e as impurezas que os produtos de styling, cloro, e poluentes deixam no cabelo, sem retirar o brilho ou diminuir a vitalidade. Protege o cabelo contra poluentes ambientais*.",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Deixar de pose: 2-5 minutos. Passar por água.",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK Reconstructing Conditioner",
+					"subname": "Para reparar cabelos danificados",
+					"description": "Condicionador diário restaurador elimina danos e as zonas mais fragilizadas com precisão semelhante a um laser, repondo instantaneamente o brilho, a força e a maleabilidade onde os cabelos mais precisam. Repara os cabelos que sofreram muitas transformações e mudanças de cor. Duplica a resistência do cabelo à quebra. Aumenta o brilho e melhora a elasticidade e capacidade de maneabilidade. Suaviza, desembaraça e elimina a estática.",
+					"instructions": "Aplicar no cabelo húmido. Deixar de pose: 1-2 minutos. Passar por água.",
+					"size": "250ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK Reconstructor",
+					"subname": "Para reparar cabelos danificados",
+					"description": "Um herói capilar e o começo da K-PAK! Conjugando uma poderosa combinação de aminoácidos e a tecnologia Joico, este tratamento reconstrói, fortalece e melhora a elasticidade dos cabelos mais fragilizados, restaurando-os instantaneamente para um aspeto saudável. É uma reconstrução capilar tão direcionada, e transformadora, que o tornou o favorito de milhões de estilistas - e temos os prémios que provam isso*. Reconstrói e fortalece em minutos até mesmo os cabelos mais fragilizados. 64% menos quebra*. Cabelo com aparência instantaneamente mais saudável.",
+					"instructions": "Aplicar nos cabelos húmidos. Deixar de pose por 5 minutos. Passar por água. Para mais hidratação, aplicar em seguida K-PAK Hydrator Intense Treatment.",
+					"size": "150ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK Hydrator Intense Treatment",
+					"subname": "Para cabelo seco, danificado",
+					"description": "Tratamento intensamente hidratante ativa o sistema de hidratação, ajudando mesmo os cabelos excessivamente processados e ressequidos a tornarem-se novamente macios, suaves e flexíveis. Reabastece instantaneamente a humidade, aumenta o brilho, sela a cutícula, melhora a elasticidade. Cabelo 2x mais macio; *Aumenta o brilho; sela a cutícula; melhora a maleabilidade e elasticidade do cabelo.",
+					"instructions": "Aplicar no cabelo húmido. Deixar de pose: 5 minutos. Passar por água. Finalizar o penteado.",
+					"size": "250 ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK Liquid Reconstructor",
+					"subname": "Para cabelo fino, danificado",
+					"description": "Uma formulação leve, mas pura - OURO líquido! Com uma potente mistura de aminoácidos e nova tecnologia inovadora de queratina para reparar e fortalecer os cabelos stressados. Com uma formulação leve este, reconstrutor líquido é ideal para pessoas com cabelos finos e frágeis, mas que pretendem uma aparência saudável e brilhante. Muitos tratamentos intensivos são fortes… e pesados; O Liquid Reconstructor consegue fazer maravilhas com uma fórmula superleve em spray que não deixa os cabelos finos e frágeis pesados. Versão em spray sem passar por água do nosso premiado K-Pak Reconstructor*. 65% menos quebra**",
+					"instructions": "Aplicar nos cabelos lavados e húmidos. Pulverizar no cabelo, concentrando-se nas pontas ou outras áreas altamente danificadas. Pentear. Finalizar o penteado como habitualmente.",
+					"size": "250 ml e 1000 ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "K-PAK COLOR THERAPY",
+			"products": [
+				{
+					"name": "K-PAK COLOR THERAPY Color Protecting Shampoo",
+					"subname": "Para preservar a cor & proteger o cabelo danificado",
+					"description": "Champô para lavar e remover suavemente os resíduos dos cabelos colorados e fragilizados, a sua espuma cremosa rica em óleos e antioxidantes, ajudará a prolongar a vida e vitalidade da cor e a combater danos futuros. Melhora a elasticidade e o brilho; ajuda a restaurar e proteger o cabelo.",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Passar por água. Repetir a aplicação se necessário. Complemente com o condicionador K-Pak Color Therapy",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK COLOR THERAPY Color Protecting Conditioner",
+					"subname": "Para preservar a cor & proteger o cabelo danificado",
+					"description": "Condicionador com uma formulação extra-condicionadora ajuda a proteger a vitalidade da cor, enquanto hidrata ao longo do tempo para fortalecer o cabelo e reduzir a quebra. Ajuda a restaurar e proteger o cabelo para uma cor vibrante e duradoura*. Duplica a resistência do cabelo à quebra**Aumenta o brilho; melhora a elasticidade e maneabilidade.",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 1-2 minutos. Passar bem por água",
+					"size": "250ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK COLOR THERAPY Luster Lock",
+					"subname": "Brilho Instantâneo & Tratamento de Reparação",
+					"description": "Com apenas uma aplicação, repara e acentua a vibração da cor. Proporciona um brilho esplendoroso. Fortalece e deixa o cabelo com aspeto saudável e luminoso. Aumenta a vitalidade da cor, fortifica e reduz a quebra, cabelo 9x mais forte*, 89% menos quebra*, Um verdadeiro tratamento instantâneo para cabelos colorados, para uma aparência mais saudável.",
+					"instructions": "Aplicar no cabelo lavado e húmido. Pentear para distribuir bem o produto. Deixar de pose 2-5 minutos. Passar por água. Pentear como habitualmente.",
+					"size": "150ml e 500ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK COLOR THERAPY Luster Lock Multi-Perfector",
+					"subname": "Spray de Brilho & Proteção Diária",
+					"description": "Spray Leave-In de tratamento diário, mantem a vibração da cor e a hidratação. Evita o desvanecimento da cor e protege os danos – DIARIÁMENTE!. Textura sedosa, cria um escudo de proteção invisível, mas poderoso contra os danos térmicos e exposição aos raios UV, que podem desvanecer a cor do cabelo. Facilita o desembaraçar e deixa os cabelos macios, sedosos e um brilho incrível. Mantém mais de 82% da vitalidade das cores por até 8 semanas* Cabelo 2X mais forte** Controla o frizz e aumenta o brilho; protege cabelo colorado contra os raios UVA/UVB",
+					"instructions": "Agitar a embalagem, aplicar no cabelo lavado e húmido. Pentear para distribuir bem o produto. Pentear como habitualmente.",
+					"size": "200ml",
+					"image": ""
+				},
+				{
+					"name": "K-PAK COLOR THERAPY Luster Lock Glossing Oil",
+					"subname": "Proteção da cor & brilho",
+					"description": "Sérum de proteção da cor e brilho. Com uma fórmula brilhante que é “simplesmente leve” para poder ser usado em cabelos finos, mas bastante nutritivo para se usar em cabelos mais grossos, para obter uma cor vibrante e um brilho incrível! Esta mistura de óleos essenciais proporciona um efeito surpreendente instantâneo, além de uma proteção poderosa para garantir que sua cor brilhe à distância. Duplica a vibração da cor*. Preserva mais de 85% da cor do cabelo**; 150% mais brilho*. Cabelo 2X mais forte***; Protege o cabelo contra poluentes****",
+					"instructions": "Aplicar 1- 2 gotas nos cabelos eco ou húmido. Pentear como habitualmente.",
+					"size": "63ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "BLONDE LIFE",
+			"products": [
+				{
+					"name": "BLONDE LIFE Brightening Shampoo",
+					"subname": "Para nutrir & Dar brilho",
+					"description": "Champô livre de sulfatos de SLS/SLES*. Lava suavemente, removendo os resíduos e oleosidade; Restaura o nível ideal de pH do cabelo; Elimina os tons cobre indesejados neutralizando o cloro e os minerais que causam opacidade e amarelecimento.",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Passar por água. Repetir a aplicação se necessário.",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "BLONDE LIFE Brightening Conditioner",
+					"subname": "Para dar brilho, hidratar & Suavizar",
+					"description": "Esqueça os tratamentos excessivamente pesados direcionados para “louros descolorados”. O nosso Condicionador Blonde Life com uma fórmula leve; profundamente nutritiva, reaviva instantaneamente os cabelos louros sem pesar, neutralizando o cloro e os minerais que levam ao desvanecimento e amarelecimento do tom. Cada madeixa é destacada e polida com brilho extra, e um poder que ajuda a desembaraçar facilmente o cabelo.",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 2-3 minutos. Passar bem por água.",
+					"size": "250ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "BLONDE LIFE Brightening Masque",
+					"subname": "Para Hidratar intensamente & Dar brilho",
+					"description": "Este tratamento mágico hidrata, suaviza e amplifica instantaneamente os cabelos louros, neutralizando os minerais que levam à opacidade e ao amarelecimento. Não pesa, não é gorduroso... apenas perfeição cristalina e dentro do tom. Hidrata intensamente, suaviza, dá brilho e condiciona. Usar a uma vez por semana como um tratamento desintoxicante, mas profundamente nutritivo, que ajudará a manter o louro brilhante. Nos cabelos mais grossos ou louros que precisam de um pouco mais de atenção devido aos danos, usar Blonde Life Brightening Masque em vez do Condicionador até 3 vezes por semana.",
+					"instructions": "Lavar com o Blonde Life Champô. Aplicar no cabelo molhado, (Em cabelos finos evitar a área do couro cabeludo) Pentear Deixar de pose 2-5 minutos. Passar por água.",
+					"size": "150ml",
+					"image": ""
+				},
+				{
+					"name": "BLONDE LIFE Brilliant Glow",
+					"subname": "Brilho instantâneo & suavidade",
+					"description": "Prepare-se para aquele brilho e suavidade cristalinos com este Óleo que aumenta instantaneamente o brilho até mesmo os dos cabelos louros mais claros, ao mesmo tempo que nutre e protege cada madeixa mais delicada.",
+					"instructions": "Aplicar 1-2 doses nos cabelos húmidos ou secos. Pentear como de costume.",
+					"size": "100ml",
+					"image": ""
+				},
+				{
+					"name": "BLONDE LIFE Violet Shampoo",
+					"subname": "Para louros frios & brilhantes",
+					"description": "Nunca perderá a calma com o Shampoo Blonde Life Violet - um Champô suave, brilhante e neutralizante, livre de sulfatos SLS/SLES* para eliminar instantaneamente os tons amarelos e “bronze” indesejáveis, para que os louros descolorados permaneçam bonitos e com uma tonalidade fria.",
+					"instructions": "Aplicar nos cabelos molhados. Emulsionar. Deixar de pose 1-3 minutos. Passar por água. Aplicar de seguida o Condicionador Blonde Life Violet. Usar 2 a 3 vezes por semana para manter tons frios.",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "BLONDE LIFE Violet Conditioner",
+					"subname": "Para louros frios & brilhantes",
+					"description": "Condicionador Blonde Life Violet, nutre e neutraliza os tons louros, a sua fórmula equilibrante proporciona uma frescura aos louros, deixando-os brilhantes, hidratados e protegidos, enquanto anula os tons “Bronze” e amarelos indesejados. Nutre e protege os cabelos louros frágeis; facilita o pentear e ajuda a desembaraçar o cabelo de uma forma incrível.",
+					"instructions": "Aplicar no cabelo húmido. Emulsionar. Deixar de pose 1-3 minutos. Passar por água. Usar 2 a 3 vezes por semana para manter tons frios.",
+					"size": "250ml e 1000ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "BLONDE LIFE",
+			"products": [
+				{
+					"name": "HYDRASPLASH Hydrating Shampoo",
+					"subname": "Para cabelo seco, fino/médio",
+					"description": "Champô hidratante, com uma espuma luxuosa, lava suavemente, removendo os resíduos, sem retirar a humidade natural necessária, deixando o cabelo brilhantemente limpo, macio e com aparência saudável. Deixa os cabelos macios e flexíveis. Hidratação 24 horas*",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Passar por água. Repetir a aplicação se necessário.",
+					"size": "250ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "HYDRASPLASH Hydrating Conditioner",
+					"subname": "Para cabelo seco, fino/médio",
+					"description": "Condicionador leve e exclusivo fornece a quantidade certa de hidratação necessária para deixar os cabelos finos leves e soltos. Desembaraça facilmente e restaura a elasticidade dos cabelos mesmo os mais finos, deixando-os macios sem pesar. Hidratação 24 horas*",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 1-2 minutos. Passar bem por água. Para melhores resultados, certifique-se de aplicar uma pequena quantidade de HydraSplash Replenishing.Leave-In antes da secagem.",
+					"size": "150ml",
+					"image": ""
+				},
+				{
+					"name": "HYDRASPLASH Replenishing Leave-In Treatment",
+					"subname": "Para cabelo seco, fino/médio",
+					"description": "Leave-in, um hidratante restaurador para usar como pré-secagem, nutre, elimina o frizz e aumenta a suavidade e brilho. Deixa os cabelos finos macios sem pesar. Resultados instantâneos e visíveis continua a atuar, muito depois da aplicação no cabelo. Hidratação 24 horas*",
+					"instructions": "Aplicar uma pequena quantidade nos cabelos limpos e húmidos, do meio/comprimentos às pontas. Pentear como habitualmente.",
+					"size": "100ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "MOISTURE RECOVERY",
+			"products": [
+				{
+					"name": "MOISTURE RECOVERY Moisturizing Shampoo",
+					"subname": "Para cabelo seco; espesso/grosso",
+					"description": "Champô suave e cremoso, lava suavemente o cabelo sem retirar a hidratação vital. Ajuda a repor a humidade perdida e a restaurar a suavidade em cabelos espessos/grossos. Em cada aplicação restaura a elasticidade e suavidade aos cabelos secos e ásperos. Hidratação 24 horas*",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Passar por água. Repetir a aplicação se necessário.",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "MOISTURE RECOVERY Moisturizing Conditioner",
+					"subname": "Para cabelo seco; espesso/grosso",
+					"description": "Condicionador exuberante repõe rapidamente o que o styling diário e o meio ambiente eliminam do cabelo - devolvendo instantaneamente, suavidade e brilho ao cabelo cansado, crespo e difícil de pentear. Contém óleo de jojoba super nutritivo, este é um produto diário para cabelos grossos e sedentos, que ajuda a desembraçar, reduzir o frizz e ao mesmo tempo que adiciona suavidade e brilho.",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 1 minuto. Passar bem por água.",
+					"size": "250ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "MOISTURE RECOVERY Moisturizing Treatment Balm",
+					"subname": "Para cabelo seco; espesso/grosso",
+					"description": "3-5 minutos é o suficiente para que esta maravilhoso tratamento, ultra hidratante sacie profundamente os cabelos secos, aumentando a força, reduzindo a quebra e o frizz. Formulada com três super ingredientes (óleo de jojoba, manteiga de cárite e algas marinhas) para resgatar os cabelos secos, adicionando suavidade e um brilho extraordinário. Hidratação 24 horas*",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 3-5 minutos. Passar bem por água.",
+					"size": "250ml e 500ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "JoiFULL",
+			"products": [
+				{
+					"name": "JoiFULL Volumizing Shampoo",
+					"subname": "Para dar volume pleno e duradouro",
+					"description": "Champô com espuma rica e cremosa, limpa de forma suave, mas de forma eficaz o cabelo; ao mesmo tempo que adiciona instantaneamente corpo e volume. Deixa os cabelos limpos e com brilho - nutridos de forma única e prontos para volume extraordinário com uma sensação natural. O cabelo fica mais cheio e espesso; Retenção do penteado por 24 horas* Adiciona brilho instantaneamente.",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Passar por água. Repetir a aplicação se necessário.",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "JoiFULL Volumizing Conditioner",
+					"subname": "Para dar volume pleno e duradouro",
+					"description": "Tudo o que o cabelo fino pode desejar de um condicionador: uma fórmula com poderosos ingredientes desembaraçadores, projetada para criar corpo e flexibilidade, sem deixar o cabelo pesado. Facilita o pentear de forma única e suave. Este condicionador de uso diário nutre os cabelos finos com um toque quase impercetível. Ajuda a fortalecer e nutrir os cabelos; Proporciona Volume cheio, espessura e flexibilidade. Retenção do penteado por 24 horas* Facilita o desembaraçar e deixa os cabelos bem penteados sem nós. Adiciona brilho instantaneamente.",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 1-2 minutos. Passar bem por água.",
+					"size": "250ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "JoiFULL Volumizing Styler",
+					"subname": "Para dar volume pleno e suporte duradouros",
+					"description": "Sonhando com cabelos volumosos e com elevação? Aqui está o herói que proporciona corpo, elasticidade e plenitude brilhante, sem pesar e deixar resíduos. Com JoiFULL Volumizing Styler, irá experimentar o pentear fácil e único de um creme delicado, mas com o poder de moldar e modelar de um gel... tudo num único produto híbrido revolucionário. Transforma instantaneamente os cabelos finos em cabelos cheios, luxuosos e de aparência natural. Adicione facilmente suporte e corpo duradouros sem deixar o cabelo rígido e crocante. Volume mais cheio, espesso e flexível; Retenção do penteado por 24 horas*. Proteção duradoura contra a humidade; Protege contra danos térmicos até 232°C.",
+					"instructions": "Aplicar 1-2 doses nas mãos e emulsionar. Aplicar uniformemente por todo o cabelo. Ideal para secar com o secador, a sua tecnologia é ativada com o calor proporcionando suporte e resultados duradouros.",
+					"size": "100ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "COLORFUL",
+			"products": [
+				{
+					"name": "COLORFUL Anti-fade Shampoo",
+					"subname": "Para prolongar a vibração da cor",
+					"description": "Champô anti desvanecimento da cor, livre de sulfatos de SLS/SLES. Lava suavemente os cabelos colorados. Proporciona uma limpeza luxuosa e completa, sem os ingredientes agressivos conhecidos por retirar do cabelo a vitalidade e a hidratação necessária. Protege e nutre os cabelos, aumentando a durabilidade e vibração da cor, dando-lhe um aspeto mais saudável e brilhante. A vibração da cor dura até 8 semanas*. Fortifica o cabelo para uma resistência 3X maior à quebra***",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Passar por água. Repetir a aplicação se necessário.",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "COLORFUL Anti-fade Conditioner",
+					"subname": "Para prolongar a vibração da cor",
+					"description": "Condicionador diário, brilhante e hidratante, envolve o cabelo numa infusão de suavidade e brilho, que reveste o cabelo com uma proteção verdadeira e contante contra o desvanecimento da cor. A vibração da cor dura até 8 semanas*. Desembaraça e nutre instantaneamente os cabelos colorados. Protege o cabelo e reduz a quebra em mais de 70%***",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 1-2 minutos. Passar bem por água.",
+					"size": "250ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "COLORFUL GLOW BEYOND Anti-fade Serum",
+					"subname": "Para brilho instantâneo e proteção UV",
+					"description": "Imagine um toque de vibração instantâneo, percetível e impressionante - o tipo de efeito que aumenta o brilho e ao mesmo tempo ajuda a proteger contra os raios UV. Isso é o que vai conseguir com este Sérum anti desvanecimento. Formulado com óleo de camélia e extrato de romã, este tratamento instantâneo destaca e ajuda a prolongar o brilho e vibração da cor. Com apenas algumas gotas, a cor fica instantaneamente – vibrante, brilhante e protegida contra os raios UV. Aumenta a vitalidade da cor e proporciona suavidade; Numa única aplicação reduz o frizz nos cabelos mais lisos. Protege contra os efeitos da poluição; Repõe a humidade perdida e hidrata profundamente os cabelos grossos/ásperos e secos.",
+					"instructions": "Aplicar 1-2 doses nos cabelos secos ou húmidos. Finalizar o penteado como habitualmente"
+				}
+			]
+		},
+		{
+			"name": "YOUTHLOCK",
+			"products": [
+				{
+					"name": "YOUTHLOCK Shampoo",
+					"description": "Champô suave enriquecido com colágeno, de uso diário lava suavemente e remove de forma suave as impurezas, proporcionando uma sensação de limpeza leve e suave. Acrescenta brilho e reduz a quebra durante a escovagem em 60%*. Livre de sulfatos de SLS/SLES**",
+					"instructions": "Aplicar no cabelo molhado, Emulsionar. Passar por água. Repetir a aplicação se necessário.",
+					"size": "300ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "YOUTHLOCK Conditioner",
+					"description": "Condicionador leve, enriquecido com colágeno, para cabelos maduros, secos, quebradiços. Adiciona corpo, elasticidade, brilho, suavidade e maneabilidade. Este cuidado hidratante amacia instantaneamente o cabelo seco e controla os cabelos rebeldes e indisciplinados. Suaviza o cabelo crespo, evitando a quebra.",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 1-2 minutos. Passar bem por água.",
+					"size": "250ml e 1000ml",
+					"image": ""
+				},
+				{
+					"name": "YOUTHLOCK Treatment Masque",
+					"description": "Máscara de Tratamento profundamente nutritiva. Transforma os cabelos crespos, secos e indisciplinados em cabelos macios, brilhantes e manejáveis sem qualquer peso. Reduz a quebra na escovagem durante o styling em 60%* Proporciona brilho máximo, flexibilidade e reduz o frizz. Nutre profundamente, restaura uma aparência jovem e saudável ao cabelo",
+					"instructions": "Aplicar no cabelo lavado e húmido. Deixar de pose 2-5 minutos. Passar bem por água.",
+					"size": "150ml",
+					"image": ""
+				},
+				{
+					"name": "YOUTHLOCK BlowOut Crème",
+					"description": "Tenha de volta um cabelo brilhante, suave e luxuosamente macio com YouthLock Blowout Crème. Proporciona corpo, jovialidade, flexibilidade e suavidade. Aumenta o brilho saudável do cabelo. Fornece um escudo protetor para proteger contra a quebra de cabelo durante a escovagem e secagem. Controla o frizz e a eletricidade estática. Resultados duradouros com proteção contra a humidade. Fortalece e protege os cabelos.",
+					"instructions": "Aplicar uniformemente nos cabelos lavados e húmidos. Secar com secador.  Evitar a área da raiz.",
+					"size": "177ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "INNERJOI HYDRATE",
+			"products": [
+				{
+					"name": "INNERJOI™ HYDRATE SHAMPOO",
+					"description": "Champô livre de sulfatos SLS/SLES**. Lava suavemente sem deixar o couro cabeludo tenso. Formulado com extrato de maçã reciclado – o cabelo e couro cabeludo ficarão limpos e revigorados, com aparência saudável e lindamente hidratados. O cabelo fica macio e brilhante, sem pesar. 86% de origem natural*",
+					"instructions": "Aplicar no cabelo molhado. Emulsionar. Passar por água. Complementar com o INNERJOI™ Hydrate Conditioner.",
+					"size": "300ml",
+					"image": ""
+				},
+				{
+					"name": "INNERJOI™ HYDRATE CONDITIONER",
+					"description": "Formulado com extrato refrescante de maçã e ingredientes de origem natural, deixa os cabelos nutridos, macios e suaves como seda. 97% de ingredientes de origem natural* Restaura a humidade do cabelo Nutre e suaviza sem pesar.",
+					"instructions": "Aplicar no cabelo húmido. Deixar de pose 1 minuto. Passar por água",
+					"size": "300ml",
+					"image": ""
+				},
+				{
+					"name": "INNERJOI™ HYDRATE DETANGLER",
+					"description": "Leave-in para dar hidratação durante todo o dia e facilitar o desembaraçar do cabelo. Com ingredientes de origem natural – incluindo extrato de maçã reciclado. 97% de ingredientes de origem natural* Hidrata o cabelo com uma única aplicação Desembaraça e nutre o cabelo O cabelo fica macio e menos crespo",
+					"instructions": "Aplicar no cabelo lavado e húmido. Finalizar o penteado como habitualmente.",
+					"size": "200ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "INNERJOI PRESERVE",
+			"products": [
+				{
+					"name": "INNERJOI™ PRESERVE SHAMPOO",
+					"description": "Champô de origem natural junta o poder dos ingredientes altamente referenciados na alimentação - como extrato de beterraba e o óleo de framboesa - para manter sua a tonalidade da cor bonita e cuidada por muito tempo. 90% de ingredientes de origem natural* Preserva a vida da sua cor de cabelo Limpeza suave Livre de sulfatos de SLS/SLES**",
+					"instructions": "Aplicar no cabelo molhado. Emulsionar. Passar por água. Complementar com o Condicionador INNERJOI™ Preserve.",
+					"size": "300ml",
+					"image": ""
+				},
+				{
+					"name": "INNERJOI™ PRESERVE CONDITIONER",
+					"description": "Condicionador nutritivo, evita o desvanecimento da cor e protege a sua vitalidade da cor, seu brilho e a saúde do cabelo. 96% de ingredientes de origem natural* Deixa a cor do cabelo brilhante e vibrante Nutre o cabelo e deixa-o macio",
+					"instructions": "Aplicar no cabelo húmido. Deixar de pose 1 minuto. Passar por água",
+					"size": "300ml",
+					"image": ""
+				},
+				{
+					"name": "INNERJOI™ PRESERVE PROTECTIVE MILK",
+					"description": "Protetor sem passar por água, a resposta naturalmente protetora para cabelos colorados. Formulado com ingredientes de origem natural - como extrato de beterraba e óleo de framboesa – Desembaraça o cabelo e ajuda a preservar a cor do cabelo. 97% de ingredientes de origem natural* Desembaraça e nutre o cabelo Protege contra danos térmicos até 232°C",
+					"instructions": "Aplicar no cabelo lavado e húmido. Pentear. Finalizar como habitualmente.",
+					"size": "200ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "INNERJOI STRENGTHEN",
+			"products": [
+				{
+					"name": "INNERJOI™ STRENGTHEN SHAMPOO",
+					"description": "Champô de limpeza fortalecedor, cria uma espuma rica, mas suave, que envolve os cabelos cansados e mais fragilizados com um reforço extra. 90% de ingredientes de origem natural* Livre de sulfatos de SLS/SLES**",
+					"instructions": "Aplicar no cabelo molhado. Emulsionar. Passar por água. Complementar com o Strengthen Conditioner",
+					"size": "300 ml",
+					"image": ""
+				},
+				{
+					"name": "INNERJOI™ STRENGTHEN CONDITIONER",
+					"description": "O condicionador Strengthen proporciona uma grande reviravolta nos cabelos danificados... construindo um cabelo que parece - e sente-se - resistente, saudável, macio e brilhante numa única aplicação. 96% de ingredientes de origem natural* Ajuda a reparar cabelos danificados** Nutre o cabelo e deixa-o com aspeto saudável Desembaraça, reduz o frizz e aumenta o brilho",
+					"instructions": "Aplicar no cabelo húmido. Deixar de pose 1 minuto. Passar por água",
+					"size": "300ml",
+					"image": ""
+				},
+				{
+					"name": "INNERJOI™ STRENGTHEN MASQUE",
+					"description": "Máscara fortificante nutre suavemente cada fio com a força, elasticidade e polimento que o cabelo cansado realmente precisa. 95% de ingredientes de origem natural* Ajuda a fortalecer o cabelo e reduzir a quebra** Repõe a humidade perdida e deixa o cabelo macio Renova a aparência saudável do cabelo",
+					"instructions": "Aplicar no cabelo húmido. Deixar de pose 2-5 minutos. Passar por água.",
+					"size": "150ml",
+					"image": ""
+				}
+			]
+		},
+		{
+			"name": "INNERJOI SEA SALT",
+			"products": [
+				{
+					"name": "INNERJOI™ SEA SALT SPRAY",
+					"description": "O Sea Salt Spray da INNERJOI causa impacto ao trazer aquela aparência natural, textura leve e volume, junto com uma fórmula que é tão suave e de cuidado quanto pode ser. Consiga aquele visual de praia e adicione volume ao cabelo com este spray. 98% de origem natural*. Fornece textura leve e volume. Fixação leve",
+					"ingredients": [
+						{
+							"name": "SULFATO DE MAGNÉSIO",
+							"description": "Normalmente conhecido como Sal Epson, proporciona textura leve e volume aos cabelos."
+						},
+						{
+							"name": "PROTEÍNA VEGANA",
+							"description": "Este tipo de proteína vegana, produzida de ervilhas e fontes vegetais, imita a proteína encontrada naturalmente no cabelo."
+						},
+						{
+							"name": "ÉSTER DE AZEITONA",
+							"description": "Biodegradável e reciclado proveniente da produção de azeite, este éster de azeitona ajuda a manter um cabelo com aspeto saudável."
+						}
+					],
+					"instructions": "Instruções de uso: Agite bem. Aplicar nos cabelos húmidos ou secos. Estilizar como desejar.",
+					"size": "150ml",
+					"image": ""
+				},
+				{
+					"name": "INNERJOI™ BLOWOUT CREME",
+					"description": "A escolha é sua – secar com o secador ou ao ar livre, com esta loção de dupla utilização ar livre. Reduz o frizz e protege o cabelo dos danos térmicos até 232º C. Se procura um acabamento que proporciona cabelos macios e brilhantes, este modelador delicado irá surpreendê-la. 96% de origem natural*. Reduz o frizz causado pela humidade até 72 horas**",
+					"ingredients": [
+						{
+							"name": "ÓLEO DE ABACATE",
+							"description": "Muito utilizado para ajudar a hidratar os cabelos e realçar o brilho."
+						},
+						{
+							"name": "PROTEÍNA VEGANA",
+							"description": "Este tipo de proteína vegana, produzida de ervilhas e fontes vegetais, imita a proteína encontrada naturalmente no cabelo."
+						},
+						{
+							"name": "ÉSTER DE AZEITONA",
+							"description": "Biodegradável e reciclado proveniente da produção de azeite, este éster de azeitona ajuda a manter um cabelo com aspeto saudável."
+						}
+					],
+					"instructions": "Instruções de uso: Aplicar no cabelo lavado e húmido. Finalizar como desejar.",
+					"size": "150ml",
+					"image": ""
+				}
+			]
+		}
+	]
 }

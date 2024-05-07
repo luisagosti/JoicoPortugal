@@ -56,6 +56,7 @@
 				{
 					"id": 0,
 					"name": "PRO SERIES 1 Bond-Protecting Color Optimizer Spray",
+					"subname": "Bond-Protecting Color Optimizer Spray",
 					"step": "PASSO 1 - PROTEÇÃO DE LIGAÇÕES",
 					"pH": "9.0 - 10.0",
 					"MWS": "150-2500",
@@ -67,6 +68,7 @@
 				{
 					"id": 1,
 					"name": "PRO SERIES 2 Bond-Strengthening Color Treatment",
+					"subname": "Bond-Strengthening Color Treatment",
 					"step": "PASSO 2 - FORTALECIMENTO DE LIGAÇÕES",
 					"pH": "3.5 - 4.5",
 					"MWS": "150-2500",
@@ -142,6 +144,7 @@
 				{
 					"id": 0,
 					"name": "Clarifying Shampoo",
+					"subname": "Para remover cloro e resíduos acumulados",
 					"step": "PASSO 1 - LIMPAR",
 					"description": "Limpa profundamente. Remove depósitos de minerais, e resíduos de produtos acumulados. Champô profundamente desintoxicante abre caminho para cabelos brilhantes, flexíveis e de aparência saudável, removendo suavemente, mas com eficácia, os resíduos acumulados e as impurezas que os produtos de styling, cloro, e poluentes deixam no cabelo, sem retirar o brilho ou diminuir a vitalidade.",
 					"instructions": "Instruções de uso: Lavar o cabelo com o K-PAK PROFESSIONAL Clarifying Shampoo, para melhores benefícios de desintoxicação, deixar de pose 2 a 5 minutos. Passar por água.",
@@ -151,6 +154,7 @@
 				{
 					"id": 1,
 					"name": "Cuticle Sealer",
+					"subname": "Neutralizador de pH",
 					"step": "PASSO 2 - ACIDIFICAR",
 					"description": "Suaviza e fecha a cutícula, reduzindo o inchaço. Neutraliza qualquer resíduo de amônia e interrompe a oxidação. Suaviza, desembaraça e aumenta a elasticidade. Esta etapa de acidificação em combinação com serviços químicos é executada antes e depois do serviço químico. Evitar o contato direto com o couro cabeludo.",
 					"instructions": "Instruções de uso: Aplicar K-PAK PROFESSIONAL Cuticle Sealer nos cabelos húmidos e secos com toalha. Deixar de pose 5 minutos. Pentear. Passar por água.",
@@ -160,6 +164,7 @@
 				{
 					"id": 2,
 					"name": "Reconstructor",
+					"subname": "Para cabelo danificado",
 					"step": "PASSO 3 - RECONSTRUIR",
 					"description": "Para impedir que o cabelo quebre, restaura a sua força original! Previne o desvanecimento da cor, reconstruindo o cabelo internamente, o que dá às moléculas da cor base para se agarrarem novamente. Aumenta a elasticidade, o brilho, a condição e a maneabilidade.",
 					"instructions": "Instruções de uso: Aplicar o K-PAK PROFESSIONAL Reconstructor, nos cabelos húmidos e secos com toalha. Deixar de pose 5 minutos. Pentear. Passar por água. Para otimizar os resultados em cabelos estressados e danificados, repita o Passo 2 (Acidificar) e o Passo 3 (Reconstruir) até 3 vezes.",
@@ -169,6 +174,7 @@
 				{
 					"id": 3,
 					"name": "Hydrator",
+					"subname": "Para cabelo danificado",
 					"step": "PASSO 4 - HYDRATE",
 					"description": "Hidrata, amacia e suaviza instantaneamente, eliminando o frizz. Sela a cutícula e melhora a elasticidade, corpo e brilho. Este tratamento intensamente hidratante ativo o sistema de hidratação, ajudando os cabelos muito secos e muito processados a ficarem novamente macios e suaves e flexíveis.",
 					"instructions": "Instruções de uso: Aplicar K-PAK PROFESSIONAL Hydrator nos cabelos húmidos e secos com toalha. Deixar de pose 5 minutos. Pentear. Passar por água.",
@@ -177,6 +183,8 @@
 				{
 					"id": 4,
 					"name": "H.K.P.",
+					"step": "",
+					"subname": "Aperfeiçoador de queratina líquida",
 					"description": "Para elevar os resultados dos serviços químicos a outro nível. Esta fórmula poderosa K-Pak de proteína de queratina líquida, quando usada juntamente com os serviços de coloração, ajuda a equalizar a porosidade prolongando a durabilidade da cor, dando-lhe um aspeto mais vibrante e uniforme da raiz às pontas. Quando usado com serviços de permanente e alisamento, aumenta a força e a elasticidade de cada fio de cabelo, melhorando a textura para resultados mais duradouros – com menos danos durante a fase de processamento.",
 					"instructions": "Instruções de uso: Usar em todos os serviços de coloração ou serviços de permanente para obter resultados impressionantes que farão toda a diferença. Serviços de coloração: Pulverizar uniformemente sobre os cabelos antes da coloração. nos comprimentos e pontas porosas. Serviço de permanente/0ndulação: Pulverizar no cabelo antes da loção de permanente e antes de neutralizar.",
 					"size": "1000 ml",

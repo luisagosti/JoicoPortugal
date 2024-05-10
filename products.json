@@ -605,6 +605,164 @@
 					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO INNERJOI Style Blowout Creme.png"
 				}
 			]
+		},
+		{
+			"name": "BLONDE LIFE SYSTEM",
+			"products": [
+				{
+					"id": 0,
+					"name": "Demi-Gloss",
+					"subname": "Sistema de aclaração & brilho",
+					"description": "Coloração demi liquid para brilho luminoso, e infinitas possibilidades de tonalização. Blonde life demi gloss, toners líquidos, projetados para aumentar o brilho, neutralizar os tons indesejados e personalizar o seu tom louro preferido. Fórmula sem amoníaco. Ajudam a refrescar os louros opacos, deixando o cabelo com aspeto luminoso e brilhante.",
+					"image": "extras/PRODUTOS/blonde life demi permanent.jpg"
+				},
+				{
+					"id": 1,
+					"name": "Balayage Lightener",
+					"subname": "Sistema de aclaração & brilho",
+					"description": "Unimos o poder do pó descolorante blonde life com a precisão da argila de caulim no nosso blonde life balayage lightener, para usar em técnicas criativas “trend”, mão livre, criando destaques lindamente misturados e de aparência natural. Contém na sua formulação arginina e uma mistura exclusiva dos óleos tamanu e monoi para louros mais fortes, nutridos e brilhantes.",
+					"image": "extras/PRODUTOS/PPT - Large - PNG-JOICO Blonde Life Balayage Lightener 227g-1.png"
+				},
+				{
+					"id": 2,
+					"name": "Lightening Powder",
+					"subname": "Sistema de aclaração & brilho",
+					"description": "Blonde life lightening powder – o pó descolorante que a vai deixar lindamente loura num piscar de olhos, sem sacrificar o brilho e a condição do cabelo. A sua fórmula poderosa, contém arginina e os óleos de tamanu e monoi para construir ligações, fortalecendo e nutrindo os cabelos louros deixando-o com aparência saudável, nutrido e brilhante.",
+					"image": "extras/PRODUTOS/PPT - Large - PNG-JOICO Blonde Life Lightening Powder 454g-1.png"
+				},
+				{
+					"id": 3,
+					"name": "Crème Lightener",
+					"subname": "Sistema de aclaração & brilho",
+					"description": "Blonde life crème lightener louros brilhantes e com aparência saudável. O nosso poderoso crème lightener contém na sua formulação arginina e os óleos nutritivos tamanu e monoi, fortalecendo os cabelos, deixando-os suaves, hidratados.",
+					"image": "extras/PRODUTOS/creme lightener.jpg"
+				},
+				{
+					"id": 4,
+					"name": "Quick Tone Liqui-Crème Toners",
+					"subname": "Sistema de aclaração & brilho",
+					"description": "5 minutos ou menos! É tudo o que é preciso para obter um cabelo louro fabuloso em pouco tempo, com quick tone liqui-crème toner- uma forma rápida, para aclarar e tonalizar o seu cabelo. Com uma formulação sem amónia, e tecnologia anti quebra à base de arginina, contém ainda uma mistura de óleos exóticos nutritivos, para máximo brilho. Fragrância suave e fresca com bergamota, íris e sândalo",
+					"image": "extras/PRODUTOS/PPT - Large - PNG-JOICO Blonde Life Quick Tone Groupshot.png"
+				}
+			]
+		},
+		{
+			"name": "LUMISHINE",
+			"products": [
+				{
+					"id": 0,
+					"name": "YouthLock Permanent Crème Color",
+					"subname": "Coloração Permanente de Reparação e Brilho - “Para libertar a juventude do cabelo” \nUma fonte de juventude para cabelos maduros.",
+					"description": "Lumishine YouthLock, a primeira coloração permanente enriquecida com colágeno. Fórmula inovadora, com baixo teor de amônia que contém uma mistura exclusiva de Colágeno, Óleo de Buriti, e Aminoácido para ajudar a restaurar a força e a hidratação dos cabelos frágeis e envelhecidos, proporcionando uma aparência saudável. Devolve aos cabelos a resiliência, suavidade e brilho excecionais. Com apenas uma aplicação, o cabelo é renovado, ganhando mais corpo e luminosidade. Garante brilho e 100% cobertura até nos brancos mais resistentes.",
+					"image": "extras/PRODUTOS/PPT - Large - PNG-LumiShine YouthLock NNG Product Image 1.png"
+				},
+				{
+					"id": 1,
+					"name": "LUMI10",
+					"subname": "Coloração LUMISHINE® LUMI10™– 10 - minutos 100% cobertura de brancos",
+					"description": "Tempo é dinheiro, então faça valer cada minuto com LUMI10 ™. Esta nova coloração profissional permanente é formulada com o Quick Coverage System ™ para proporcionar: 100% de cobertura de brancos em apenas 10 minutos enquanto reforça o brilho. Cor de longa duração com cobertura uniforme, deixa os cabelos macios e com aparência luminosa",
+					"image": "extras/PRODUTOS/PPT - Large - PNG-LumiShine LUMI10 Carton.png"
+				},
+				{
+					"id": 2,
+					"name": "Demi-Permanent Liquid Color",
+					"subname": "",
+					"description": "Um sistema de coloração Tom sobre Tom, líquida suave e sem amônia, formulado apenas para depositar pigmento de cor, disfarçar os primeiros brancos e dar brilho.Fórmula sem amônia e com pH equilibrado para realçar o brilho ou disfarçar os cabelos brancos.",
+					"image": "extras/PRODUTOS/PPT - Large - PNG-LumiShine Demi-Permanent Liquid Groupshot.png"
+				}
+			]
+		},
+		{
+			"name": "HAIRSPRAYS",
+			"products": [
+				{
+					"id": 0,
+					"name": "Power spray ",
+					"subname": "Fast-dry finishing spray",
+					"description": "Spray de finalização de secagem rápida, e com uma fixação 8+, permite terminar o penteado com uma excelente fixação, sem deixar o cabelo pegajoso ou rijo. \n\nNão deixa películas.\nProtege contra a humidade e mantem o penteado até 72 horas.\nTem proteção térmica até 232°c (450°f)\nProteção uva/uvb e poluição*\nSem parabenos e livre de sulfatos sls/sles**\n\n*testado em laboratório usando partículas de poluição\n** sulfatos sls/sles = lauril sulfato de sódio / laureto sulfato de sódio",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO POWER SPRAY Fast-Dry Finishing Spray 345ml.png"
+				},
+				{
+					"id": 1,
+					"name": "Joimist",
+					"subname": "Protective finishing spray",
+					"description": "Joimistfirm spray de finalização com uma fixação de nível 9, bloqueia os elementos que podem arruinar o seu estilo/penteado, mantendo-o no lugar durante mais tempo, resistindo à humidade e poluição sem necessitar de retoques.\n\nRetém o penteado durante todo o dia. \nAjuda a controlar a eletricidade estática e o frizz.\nProtege contra a humidade e poluição*\nProteção térmica até 232°c.\nSem parabenos e livre de sulfatos sls/sles**\n\n*testado em laboratório usando partículas de poluição\n\n** sulfatos sls/sles = lauril sulfato de sódio / laureto sulfato de sódio",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO JOIMIST FIRM Dry Finishing Spray 350ml .png"
+				}
+			]
+		},
+		{
+			"name": "AVOLUMADORES",
+			"products": [
+				{
+					"id": 0,
+					"name": "Joiwhip design foam",
+					"subname": "Firm hold design foam",
+					"description": "Mousse de fixação firme de nível 7, cria um volume extraordinário em qualquer obra-prima que possa imaginar; ao mesmo tempo que infunde instantaneamente no cabelo volume suntuoso, fixação e proteção contra os danos ambientais, sem deixar um único fio de cabelo seco/ressequido. Pense na joiwhip como uma espuma formulada para aumentar visivelmente o corpo e brilho numa nuvem cheia de proteção. \nCria volume e corpo duradouros; \nAumenta o brilho; \nControla a eletricidade estática e o frizz dos cabelos rebeldes\nProteção térmica\nProtege contra a poluição*\nSem silicone.\n\n*testado em laboratório usando partículas de poluição",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO JOIWHIP Firm Hold Design Foam 300ml.png"
+				},
+				{
+					"id": 1,
+					"name": "Joi rise up",
+					"subname": "Powder spray ",
+					"description": "Pó em spray para dar um impulso imediato ao cabelo mole e sem vida, apenas com algumas pulverizações! Proporciona volume imediato na raiz e textura leve em todo o cabelo. Com proteção contra poluentes – riseup eleva o estilo de forma rápida e fácil a novos patamares. O poder deste pó em spray reside no seu aplicador direcionado, que foi desenhado para libertar uniformemente uma dose superfina de produto pelo cabelo.\nEleva o cabelo mole e achatado, proporcionando corpo, volume e suporte instantaneamente.\nAplicação fácil e direcionada.\nFixação flexível e de longa duração\nProtege o cabelo da poluição*\n\n*testado em laboratório usando partículas de poluição",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO RISE UP Powder Spray 9g.png"
+				},
+				{
+					"id": 2,
+					"name": "Dream blowout",
+					"subname": "Thermal protection crème",
+					"description": "Creme de proteção térmica, sem poder de fixação, dream blowout – a nossa solução de secagem completa que economiza muito tempo. Está direcionado para todos os que procuram uma proteção contra o frizz e os danos térmicos que ocorrem durante a secagem de forma a manterem os cabelos macios, suaves e brilhantes.Veja seu cabelo ficar luxuosamente suave e macio, com um brilho de sonho.\nOferece proteção térmica até 232°c; (450 ° f);\nReduz a quebra em mais de 75%;*\nControla o frizz e eletricidade estática;\nTempo de secagem até 50% mais rápido;\nResultados duradouros, com proteção contra humidade.\nProteção contra a humidade.\n\n*contra a quebra ao pentear cabelos danificados versus a lavagem sem condicionamento",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO Dream Blowout Thermal Protection Creme 200ml.png"
+				},
+				{
+					"id": 3,
+					"name": "Humidity blocker +",
+					"subname": "Protective finishing spray",
+					"description": "Não deixe que o seu penteado ou o seu estilo liso de prancha impecável fiquem desprotegidos contra o clima chuvoso e húmido. Este spray de proteção anti humidade, funciona incansavelmente, depositando um escudo invisível de brilho 24 horas contra o frizz, Criando brilho, movimento e acabamento duradouro. Reforçado com uma leve fixação e proteção contra a poluição* – ao mesmo tempo que reduz a eletricidade estática!\n\nProteção contra humidade 24 horas;\nRedução instantânea do frizz;\nElimine a eletricidade estática;\nAumenta o brilho;\nProteção térmica até 232°c;\nProtege contra a poluição*\nSem parabenos\nLivre de sulfatos de sls/sles**\n\n*testado em laboratório usando partículas de poluição.\n** sls/sles sulfatos = lauril sulfato de sódio / lauril sulfato de sódio",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO HUMIDITY BLOCKER+ - Flat Lay 6.png"
+				}
+			]
+		},
+		{
+			"name": "GELES&CREMES",
+			"products": [
+				{
+					"id": 0,
+					"name": "Joigel Medium",
+					"subname": "Styling gel",
+					"description": "Procura fixação, brilho, flexibilidade e movimento, sem o cabelo ficar rígido ou crocante. Este gel modelador de fixação média foi projetado para fornecer tudo o que é preciso – proporciona hidratação, corpo e protege contra poluição*. Há muito mais no joigel medium do que apenas uma fixação manejável. Considere-o como um modelador flexível com excelente suporte, enquanto protege o cabelo com um toque de glamour.\n\nAjuda a adicionar corpo e volume;\nBloqueia a hidratação;\nAumenta o brilho;\nProteção duradoura contra humidade;\nProteção térmica até 232°c;\nProtege contra a poluição. *\n*testado em laboratório usando partículas de poluição.",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO JOIGEL Medium Styling Gel 250ml.png"
+				},
+				{
+					"id": 1,
+					"name": "Joigel Firm",
+					"subname": "Styling gel",
+					"description": "Cabelo resistente, tenaz, grosso e muitas vezes áspero precisa de um gel modelador que resista sem receio à sua rebeldia. Esta fórmula de fixação firme – vai fixar o brilho, a hidratação e proteger contra a poluição* e a humidade – providencia suporte excelente aos cabelos grossos e difíceis. Há muito mais no joigel firm do que apenas controlo: considere-o como um modelador de fixação firme que protege o cabelo com uma dose de glamour.\n\nAjuda a adicionar estrutura e fixação;\nBloqueia a hidratação;\nAumenta o brilho;\nProteção duradoura contra humidade;\nProteção térmica até 232°c;\nProtege contra a poluição.*\n\n*testado em laboratório usando partículas de poluição.",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO JOIGEL FIRM Styling Gel 250 ml.png"
+				},
+				{
+					"id": 2,
+					"name": "Zero Heat ",
+					"subname": "Air dry styling crèmes - For fine/medium hair",
+					"description": "Zeroheat creme modelador, perfeito para usar em cabelos finos-médios. Estiliza o cabelo em segundos, economizando tempo, proporciona longa duração aos looks de secagem ao ar livre, enquanto mantem o frizz sob controle. Adora secar o cabelo ao ar livre, e sem esforço conseguir um look fantástico, sem aquele aspeto crespo e indisciplinado, que acontece naqueles dias em que não usa o secador de mão? O novo zero heat air dry styling crème é um creme modelador para usar sem calor, sem complicações e que vai precisar quando quiser secar o cabelo ao ar livre e ainda assim conseguir um look polido e elegante.\n\nMinimiza o frizz e melhora a textura natural do cabelo\nReduz o tempo de secagem natural e controla a humidade durante 24 horas\nAumenta o controlo e o brilho\nMantem o penteado por 24 horas\nNão deixa resíduos.",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO Zero Heat For Fine-Medium Hair 150ml.png"
+				},
+				{
+					"id": 3,
+					"name": "Zero Heat ",
+					"subname": "Air dry styling crèmes - For thick hair",
+					"description": "Zeroheat creme modelador perfeito para usar em cabelos grossos. Estiliza o cabelo em segundos, economizando tempo, proporciona longa duração aos looks de secagem ao ar livre, controlando o volume e o frizz. Adora secar o cabelo ao ar livre, sem esforço e conseguir um look fantástico, sem aquele aspeto crespo e indisciplinado, que acontece naqueles dias em que não se usa o secador de mão? Zero heat air dry styling crème é um creme modelador para usar sem calor, sem complicações e que vai precisar quando quiser secar o cabelo ao ar livre e ainda assim conseguir um look polido e elegante.\n\nMinimiza o frizz e melhora a textura natural do cabelo\nReduz o tempo de secagem natural e controla a humidade durante 24 horas\nAumenta o controlo e o brilho\nMantem o penteado por 24 horas\nNão deixa resíduos.",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO Zero Heat For Thick Hair 150ml.png"
+				},
+				{
+					"id": 4,
+					"name": "Curl confidence",
+					"subname": "Defining crème ",
+					"description": "Celebre a textura do seu cabelo com o creme de definição com o curl confidence defining crème – um impulso de brilho, hidratação e movimento que elimina o frizz e define perfeitamente cada onda, caracol ou textura no seu cabelo. Colocando para trás a rigidez crocante da velha guarda. Este mágico de definição fará com que os seus caracóis saltitem com joi, dando-lhes um impulso, elevando a sua textura com um modelador que proporciona um toque suave e definição.\n\nDefine e melhora a ondulação/textura natural\nReduz o frizz\nHidrata o cabelo\nAumenta o brilho\nSem sensação pegajosa ou crocante",
+					"image": "extras/PRODUTOS/Web Use - Small - PNG-JOICO Curl Confidence Defining Crème 177ml.png"
+				}
+			]
 		}
 	]
 }
